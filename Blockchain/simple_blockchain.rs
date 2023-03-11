@@ -24,3 +24,15 @@ impl Block {
     }
 }
 // I define a constructor function for the 'Block' struct, which makes it easier to create new blocks.
+
+
+impl Display for Block {
+    fn fmt(&self, f: &mut Formatter<'_>) -> Result {
+        write!(
+            f,
+            "Block {}: {} (Timestamp: {}, Hash: {}, Previous Hash: {})",
+            self.index, self.data, self.timestamp, self.hash, self.previous_hash
+        )
+    }
+}
+// By implementing the 'Display' trait, I specify how the 'Block' struct should be displayed when printed to the console.
