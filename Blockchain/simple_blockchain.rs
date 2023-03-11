@@ -10,4 +10,17 @@ struct Block {
     previous_hash: String,
     hash: String,
 }
-// i define a struct named 'Block', which encapsulates the properties of a block (index, timestamp, data, previous_hash, hash).
+// I define a struct named 'Block', which encapsulates the properties of a block (index, timestamp, data, previous_hash, hash).
+
+impl Block {
+    fn new(index: u32, timestamp: u128, data: String, previous_hash: String, hash: String) -> Block {
+        Block {
+            index,
+            timestamp,
+            data,
+            previous_hash,
+            hash,
+        }
+    }
+}
+// I define a constructor function for the 'Block' struct, which makes it easier to create new blocks.
