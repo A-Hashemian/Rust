@@ -13,3 +13,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 // Retrieve the balance of an account
     let account_id = System::fetch_account_id(&client, &"Alice".into()).await?;
     let account_data = Balances::fetch_account_data(&client, &account_id).await?;
+    
+        // Print the account balance
+    println!("Account balance: {:?}", account_data.free);
+
+    Ok(())
