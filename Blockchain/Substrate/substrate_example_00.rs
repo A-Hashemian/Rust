@@ -18,3 +18,11 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("Account balance: {:?}", account_data.free);
 
     Ok(())
+    
+   /*
+   This example is used to query the balance of an account on the Polkadot network using the Substrate and Subxt libraries.
+
+A new Substrate client is created with ClientBuilder and configured with the requested network URL. Next, 
+System::fetch_account_id retrieves the account ID of a specific user, 
+and Balances::fetch_account_data retrieves account information.
+   */
