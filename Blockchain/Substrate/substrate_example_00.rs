@@ -9,3 +9,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .set_url("wss://rpc.polkadot.io")
         .build()
         .await?;
+    
+// Retrieve the balance of an account
+    let account_id = System::fetch_account_id(&client, &"Alice".into()).await?;
+    let account_data = Balances::fetch_account_data(&client, &account_id).await?;
