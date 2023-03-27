@@ -43,4 +43,6 @@ decl_module! {
         const AccountId: T::AccountId = T::ModuleId::get().into_account();
         // The balance type for the token.
         type Balance = T::Balance;
+        // The maximum amount that can be transferred in a single transaction.
+        const MaxTransferAmount: Balance = T::MaxTransferAmount::get();
         }
