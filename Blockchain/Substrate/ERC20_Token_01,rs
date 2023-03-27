@@ -5,3 +5,13 @@ use frame_support::{
 };
 use frame_system::{self as system, ensure_signed};
 use sp_runtime::{ModuleId, traits::{AccountIdConversion, Zero}};
+
+
+decl_storage! {
+    trait Store for Module<T: Trait> as Token {
+        // Storage for the balance of an account.
+        Balances: map hasher(blake2_128_concat) T::AccountId => T::Balance;
+        // Storage for the total supply of the token.
+        TotalSupply: T::Balance;
+    }
+}
