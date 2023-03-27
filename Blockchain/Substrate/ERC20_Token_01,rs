@@ -27,3 +27,10 @@ decl_event!(
         Approval(AccountId, AccountId, Balance),
     }
 );
+
+decl_error! {
+    pub enum Error for Module<T: Trait> {
+        // Error returned when an account does not have enough balance to complete a transfer.
+        InsufficientBalance,
+    }
+}
