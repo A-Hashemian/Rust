@@ -46,4 +46,11 @@ decl_module! {
         // The maximum amount that can be transferred in a single transaction.
         const MaxTransferAmount: Balance = T::MaxTransferAmount::get();
         fn deposit_event() = default;
+        // Transfers tokens from one account to another.
+        #[weight = 10_000]
+        pub fn transfer(origin, to: T::AccountId, value: Balance) -> DispatchResult {
+            let from = ensure_signed(origin)?;
+            Self::transfer_impl(&from, &to, value)?;
+            Ok(())
+        }
         }
