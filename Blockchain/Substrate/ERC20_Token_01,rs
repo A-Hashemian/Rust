@@ -41,4 +41,6 @@ decl_module! {
         const ModuleId: ModuleId = ModuleId(*b"mytoken ");
         // The account ID that the token is associated with.
         const AccountId: T::AccountId = T::ModuleId::get().into_account();
+        // The balance type for the token.
+        type Balance = T::Balance;
         }
