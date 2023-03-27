@@ -52,5 +52,16 @@ decl_module! {
             let from = ensure_signed(origin)?;
             Self::transfer_impl(&from, &to, value)?;
             Ok(())
+           
         }
+        
+        
+          // Approves an account to spend a certain amount of tokens on behalf of the token owner.
+        #[weight = 10_000]
+        pub fn approve(origin, spender: T::AccountId, value: Balance) -> DispatchResult {
+            let owner = ensure_signed(origin)?;
+            <Module<T>>::approve_impl(&owner, &spender, value)?;
+            Ok(())
+        }
+        
         }
