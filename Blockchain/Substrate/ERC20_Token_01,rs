@@ -15,3 +15,15 @@ decl_storage! {
         TotalSupply: T::Balance;
     }
 }
+
+decl_event!(
+    pub enum Event<T> where
+        AccountId = <T as frame_system::Trait>::AccountId,
+        Balance = <T as Trait>::Balance,
+    {
+        // Event emitted when tokens are transferred between accounts.
+        Transfer(AccountId, AccountId, Balance),
+        // Event emitted when an approval is made for an account to spend tokens.
+        Approval(AccountId, AccountId, Balance),
+    }
+);
