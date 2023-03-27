@@ -38,5 +38,7 @@ decl_error! {
 decl_module! {
     pub struct Module<T: Trait> for enum Call where origin: T::Origin {
         // The ID of the module, used for generating events.
-        
+        const ModuleId: ModuleId = ModuleId(*b"mytoken ");
+        // The account ID that the token is associated with.
+        const AccountId: T::AccountId = T::ModuleId::get().into_account();
         }
