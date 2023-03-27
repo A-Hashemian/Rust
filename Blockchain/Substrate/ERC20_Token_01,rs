@@ -45,4 +45,5 @@ decl_module! {
         type Balance = T::Balance;
         // The maximum amount that can be transferred in a single transaction.
         const MaxTransferAmount: Balance = T::MaxTransferAmount::get();
+        fn deposit_event() = default;
         }
