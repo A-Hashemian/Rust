@@ -81,3 +81,10 @@ decl_module! {
         Ok(())
         
         }
+        
+        // Implementation functions for transfer, approve, and transfer_from.
+
+       impl<T: Trait> Module<T> {
+       fn transfer_impl(from: &T::AccountId, to: &T::AccountId, value: T::Balance) -> DispatchResult {
+       // Verify that the sender has enough balance to complete the transfer.
+       let balance = Self::balances(from);
