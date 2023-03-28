@@ -97,3 +97,9 @@ decl_module! {
 
       Ok(())
         }
+        fn approve_impl(owner: &T::AccountId, spender: &T::AccountId, value: T::Balance) -> DispatchResult {
+    // Set the allowance for the spender on behalf of the owner.
+    <Balances<T>>::insert((owner.clone(), spender.clone()), value);
+
+    Ok(())
+}
