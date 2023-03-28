@@ -69,4 +69,9 @@ decl_module! {
         // Verify that the origin is signed and get the signer's account ID.
         let sender = ensure_signed(origin)?;
         
+        
+        }
+        
+        // Call the transfer from implementation function.
+        Self::transfer_from_impl(&sender, &from, &to, value)?;
         }
