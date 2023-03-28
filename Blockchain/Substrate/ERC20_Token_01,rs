@@ -64,4 +64,9 @@ decl_module! {
             Ok(())
         }
         
+        [weight = 10_000]
+        pub fn transfer_from(origin, from: T::AccountId, to: T::AccountId, value: T::Balance) -> DispatchResult {
+        // Verify that the origin is signed and get the signer's account ID.
+        let sender = ensure_signed(origin)?;
+        
         }
