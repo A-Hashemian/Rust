@@ -77,4 +77,7 @@ decl_module! {
         
         // Emit a `Transfer` event.
         Self::deposit_event(RawEvent::Transfer(from, to, value));
+        
+        Ok(())
+        
         }
