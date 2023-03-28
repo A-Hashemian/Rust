@@ -89,3 +89,11 @@ decl_module! {
        // Verify that the sender has enough balance to complete the transfer.
        let balance = Self::balances(from);
        ensure!(balance >= value, Error::<T>::InsufficientBalance);
+           // Subtract the transferred amount from the sender's balance.
+       <Balances<T>>::mutate(from, |balance| *balance -= value);
+
+       // Add the transferred amount to the recipient's balance.
+       <Balances<T>>::mutate(to, |balance| *balance += value);
+
+      Ok(())
+        }
