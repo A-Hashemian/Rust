@@ -88,3 +88,4 @@ decl_module! {
        fn transfer_impl(from: &T::AccountId, to: &T::AccountId, value: T::Balance) -> DispatchResult {
        // Verify that the sender has enough balance to complete the transfer.
        let balance = Self::balances(from);
+       ensure!(balance >= value, Error::<T>::InsufficientBalance);
