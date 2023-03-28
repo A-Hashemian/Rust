@@ -74,4 +74,7 @@ decl_module! {
         
         // Call the transfer from implementation function.
         Self::transfer_from_impl(&sender, &from, &to, value)?;
+        
+        // Emit a `Transfer` event.
+        Self::deposit_event(RawEvent::Transfer(from, to, value));
         }
