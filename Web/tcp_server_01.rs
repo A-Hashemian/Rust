@@ -1,6 +1,10 @@
 use std::net::{TcpListener, TcpStream};
 use std::io::{Read, Write};
 
+//This function is responsible for handling client connections. 
+//It takes a TcpStream as an argument and reads data from the client until it receives an empty message. 
+//It then echoes the received message back to the client.
+
 fn handle_client(mut stream: TcpStream) {
     let mut buffer = [0; 512];
        let bytes_read = match stream.read(&mut buffer) {
