@@ -11,4 +11,10 @@ fn handle_client(mut stream: TcpStream) {
                 break;
             }
         };
+    
+      if let Err(e) = stream.write_all(&buffer[..bytes_read]) {
+            println!("Failed to write to socket: {}", e);
+            break;
+        }
+    }
 }
