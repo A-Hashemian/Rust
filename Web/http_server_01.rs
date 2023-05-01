@@ -36,6 +36,6 @@ let responses = futures::future::join_all(
 /*
 this section of code uses the futures::future::join_all function to create a future that sends all the requests asynchronously
 the join_all function takes an iterator of futures and returns a future that resolves to a vector of the results of each future
-
+each future in the iterator sends a GET request to a single URL and returns the response body as a string
 
 */
