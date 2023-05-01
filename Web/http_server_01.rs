@@ -24,3 +24,11 @@ let urls = vec![
 // This line creates a new Client instance from the reqwest crate that we'll use to send the HTTP requests
 let client = Client::new();
 
+
+
+let responses = futures::future::join_all(
+    urls.iter().map(|url| async move {
+        let response = client.get(url).send().await?;
+        response.text().await.map_err(Into::into)
+    })
+).await;
