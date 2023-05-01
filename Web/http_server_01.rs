@@ -17,4 +17,7 @@ let urls = vec![
     "https://www.rust-lang.org",
 ];
 
-//
+// This line creates a vector of URLs that we want to send GET requests to
+
+let client = Client::new();
+
