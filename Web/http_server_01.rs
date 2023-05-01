@@ -19,5 +19,8 @@ let urls = vec![
 
 // This line creates a vector of URLs that we want to send GET requests to
 
+
+
+// This line creates a new Client instance from the reqwest crate that we'll use to send the HTTP requests
 let client = Client::new();
 
