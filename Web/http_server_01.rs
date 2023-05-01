@@ -9,3 +9,12 @@ The #[tokio::main] attribute on the main function tells Rust to use tokio as the
 The async keyword indicates that the function is an asynchronous function that returns a future.
 The Result<() Box<dyn std::error::Error>> return type specifies that the function returns a Result with an empty success value (()) and a Box containing any type that implements the std::error::Error trait as an error value
 */
+
+
+let urls = vec![
+    "https://www.google.com",
+    "https://www.github.com",
+    "https://www.rust-lang.org",
+];
+
+//
