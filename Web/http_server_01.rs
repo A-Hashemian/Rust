@@ -39,3 +39,14 @@ the join_all function takes an iterator of futures and returns a future that res
 each future in the iterator sends a GET request to a single URL and returns the response body as a string
 
 */
+
+
+
+
+for response in responses {
+    match response {
+        Ok(body) => println!("Response body: {}", body),
+        Err(e) => eprintln!("Error: {}", e),
+    }
+}
+
