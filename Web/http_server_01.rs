@@ -32,3 +32,10 @@ let responses = futures::future::join_all(
         response.text().await.map_err(Into::into)
     })
 ).await;
+
+/*
+this section of code uses the futures::future::join_all function to create a future that sends all the requests asynchronously
+
+
+
+*/
