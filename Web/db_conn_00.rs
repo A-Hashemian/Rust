@@ -15,4 +15,12 @@ fn main() -> Result<()> {
         [],
     )?;
   
+       // Insert a record into the "person" table
+    conn.execute(
+        "INSERT INTO person (name, age)
+                  VALUES (?1, ?2)",
+        ["Alice", 42],
+    )?;
+    
+    
   }
