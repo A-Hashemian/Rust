@@ -23,4 +23,7 @@ fn main() -> Result<()> {
     )?;
     
     
+   // Close the database connection
+    Ok(()) 
+    
   }
