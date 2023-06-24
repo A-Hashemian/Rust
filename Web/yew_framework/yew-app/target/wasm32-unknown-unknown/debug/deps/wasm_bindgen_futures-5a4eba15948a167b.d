@@ -1,0 +1,9 @@
+F:\New Amen\Revolutation2023\Rust\Rust\Web\yew_framework\yew-app\target\wasm32-unknown-unknown\debug\deps\wasm_bindgen_futures-5a4eba15948a167b.rmeta: C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wasm-bindgen-futures-0.4.37\src\lib.rs C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wasm-bindgen-futures-0.4.37\src\queue.rs C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wasm-bindgen-futures-0.4.37\src\task\singlethread.rs
+
+F:\New Amen\Revolutation2023\Rust\Rust\Web\yew_framework\yew-app\target\wasm32-unknown-unknown\debug\deps\libwasm_bindgen_futures-5a4eba15948a167b.rlib: C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wasm-bindgen-futures-0.4.37\src\lib.rs C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wasm-bindgen-futures-0.4.37\src\queue.rs C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wasm-bindgen-futures-0.4.37\src\task\singlethread.rs
+
+F:\New Amen\Revolutation2023\Rust\Rust\Web\yew_framework\yew-app\target\wasm32-unknown-unknown\debug\deps\wasm_bindgen_futures-5a4eba15948a167b.d: C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wasm-bindgen-futures-0.4.37\src\lib.rs C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wasm-bindgen-futures-0.4.37\src\queue.rs C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wasm-bindgen-futures-0.4.37\src\task\singlethread.rs
+
+C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wasm-bindgen-futures-0.4.37\src\lib.rs:
+C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wasm-bindgen-futures-0.4.37\src\queue.rs:
+C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\wasm-bindgen-futures-0.4.37\src\task\singlethread.rs:
