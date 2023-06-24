@@ -1,0 +1,10 @@
+f:\New Amen\Revolutation2023\Rust\Rust\Web\yew_framework\yew-app\target\debug\deps\gloo_console-3858ff480b624c22.rmeta: C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gloo-console-0.2.3\src\lib.rs C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gloo-console-0.2.3\src\console_dbg.rs C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gloo-console-0.2.3\src\counter.rs C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gloo-console-0.2.3\src\externs.rs C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gloo-console-0.2.3\src\macros.rs C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gloo-console-0.2.3\src\timer.rs
+
+f:\New Amen\Revolutation2023\Rust\Rust\Web\yew_framework\yew-app\target\debug\deps\gloo_console-3858ff480b624c22.d: C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gloo-console-0.2.3\src\lib.rs C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gloo-console-0.2.3\src\console_dbg.rs C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gloo-console-0.2.3\src\counter.rs C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gloo-console-0.2.3\src\externs.rs C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gloo-console-0.2.3\src\macros.rs C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gloo-console-0.2.3\src\timer.rs
+
+C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gloo-console-0.2.3\src\lib.rs:
+C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gloo-console-0.2.3\src\console_dbg.rs:
+C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gloo-console-0.2.3\src\counter.rs:
+C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gloo-console-0.2.3\src\externs.rs:
+C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gloo-console-0.2.3\src\macros.rs:
+C:\Users\eminh\.cargo\registry\src\index.crates.io-6f17d22bba15001f\gloo-console-0.2.3\src\timer.rs:
