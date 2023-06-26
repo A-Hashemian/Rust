@@ -40,6 +40,24 @@ pub struct List {
     type Message = Msg;
     type Properties = ();
   
-   
+    fn create(_: Self::Properties, link: ComponentLink<Self>) -> Self {
+        let storage = StorageService::new(Area::Local).expect("Storage Error");
+    
+        let items = {
+          if let Json(Ok(items)) = storage.restore(KEY) {
+            items
+          } else {
+            Vec::new()
+          }
+        };
+    
+        let state = List {
+          items,
+          modal_visible: false,
+          current_item: None
+        };
+    
+        Model { storage, state, link }
+      }
   
   }
