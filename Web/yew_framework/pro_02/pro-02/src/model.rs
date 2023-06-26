@@ -35,3 +35,11 @@ pub struct List {
     Remove(usize),
     Store
   }
+
+  impl Component for Model {
+    type Message = Msg;
+    type Properties = ();
+  
+   
+  
+  }
