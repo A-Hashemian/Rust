@@ -12,3 +12,11 @@ mod input;
 
 use crate::item::Item;
 use crate::modal::Modal;
+
+const KEY: &'static str = "yew.rust.crud.database";
+
+pub struct Model {
+  storage: StorageService,
+  state: List,
+  link: ComponentLink<Self>
+}
