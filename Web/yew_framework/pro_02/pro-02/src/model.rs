@@ -20,3 +20,9 @@ pub struct Model {
   state: List,
   link: ComponentLink<Self>
 }
+
+pub struct List {
+    items: Vec<Item>,
+    modal_visible: bool,
+    current_item: Option<Item>
+  }
