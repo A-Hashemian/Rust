@@ -59,5 +59,19 @@ pub struct List {
     
         Model { storage, state, link }
       }
+
+      fn update(&mut self, msg: Self::Message) -> ShouldRender {
+
+        match msg {
+          Msg::New => {
+            self.state.modal_visible = true;
+            self.state.current_item = None;
+    
+            true
+          }
+    
+          
+        }
+      }
   
   }
