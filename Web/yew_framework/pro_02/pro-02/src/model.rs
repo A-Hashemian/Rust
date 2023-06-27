@@ -69,6 +69,11 @@ pub struct List {
     
             true
           }
+      
+          Msg::HiddedModal => {
+            self.state.modal_visible = false;
+            true
+          }
     
           
         }
