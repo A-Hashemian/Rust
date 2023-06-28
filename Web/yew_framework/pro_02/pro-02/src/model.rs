@@ -74,7 +74,23 @@ pub struct List {
             self.state.modal_visible = false;
             true
           }
+       
+
+          Msg::Saved(item) => {
+            if item.id == 0 {
+              let mut item = item;
+              item.id = Item::generate_id();
+              self.state.items.push(item);
+            } else {
+              let index = self.state.items.iter().position(|i| i.id == item.id).unwrap();
+              self.state.items[index] = item;
+            }
     
+            self.update(Msg::HiddedModal);
+            self.update(Msg::Store);
+    
+            true
+          }
           
         }
       }
