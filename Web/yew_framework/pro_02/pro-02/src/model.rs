@@ -100,6 +100,14 @@ pub struct List {
     
             true
           }
+
+          Msg::Remove(idx) => {
+            self.state.items.remove(idx);
+            self.update(Msg::Store);
+    
+            true
+          }
+    
           
         }
       }
