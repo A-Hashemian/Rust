@@ -107,9 +107,16 @@ pub struct List {
     
             true
           }
-    
+          Msg::Store => {
+            self.storage.store(KEY, Json(&self.state.items));
+            false
+          }
           
         }
+      }
+
+      fn change(&mut self, _props: Self::Properties) -> bool {
+        false
       }
   
   }
