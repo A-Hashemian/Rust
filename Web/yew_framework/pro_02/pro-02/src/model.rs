@@ -91,6 +91,15 @@ pub struct List {
     
             true
           }
+
+
+          Msg::Edit(idx) => {
+            let item = self.state.items[idx].clone();
+            self.state.current_item = Some(item);
+            self.state.modal_visible = true;
+    
+            true
+          }
           
         }
       }
