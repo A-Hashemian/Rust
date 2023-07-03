@@ -135,7 +135,26 @@ pub struct List {
         };
     
         html! {
-        
+            <>
+            {modal}
+            <section class="hero is-small is-info is-bold">
+              <div class="hero-body">
+                <div class="container">
+                  <p class="title">
+                    {{ "Items" }}
+                  </p>
+                  <p class="subtitle">
+                    {{"List of items"}}
+                  </p>
+                </div>
+              </div>
+            </section>
+            <main class="section">
+              <div class="container">
+                {{self.view_table()}}
+              </div>
+            </main>
+          </>
         }
       }
   
