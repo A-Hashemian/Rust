@@ -186,4 +186,17 @@ pub struct List {
       }
     }
 
+
+    fn view_item(&self, (idx, item): (usize, &Item)) -> Html {
+        html! {
+        <tr>
+          <td>{&item.id}</td>
+          <td>{&item.name}</td>
+          <td>{&item.price}</td>
+          <td><button onclick=self.link.callback(move |_| { Msg::Edit(idx) }) type="button" class="button is-info is-outlined">{"Edit"}</button></td>
+          <td><button onclick=self.link.callback(move |_| { Msg::Remove(idx) }) type="button" class="button is-danger is-outlined">{"Remove"}</button></td>
+        </tr>
+      }
+      }
+
   }
